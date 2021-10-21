@@ -27,13 +27,13 @@
                         while ($reg = $busca->fetch_object()) {
                             $t = thumb($reg->capa);
                             echo "<tr><td><img src='$t' class='mini'>";
-                            echo "<td>$reg->nome";
+                            echo "<td><a href='detalhes.php?cod=$reg->cod'>$reg->nome</a>";
                             echo "<td>Admin";
                         }
                     }
                 }
             ?>
-            <tr> <a href=""></a>
+            <tr> 
                 <td>Foto
                 <td>Nome
                 <td>Admin
